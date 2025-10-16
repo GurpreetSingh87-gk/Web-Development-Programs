@@ -16,6 +16,8 @@ Each folder or file in this repository focuses on different web concepts such as
 ⚡ JavaScript Interactivity
 🌐 Basic Web Projects (like forms, calculators, or landing pages)
 
+
+
 ---
 
 ## 🧩 Technology Used
