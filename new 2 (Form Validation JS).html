@@ -1,0 +1,246 @@
+<HTML>
+    <HEAD>
+	    <TITLE>WEB PAGE</TITLE>
+	<STYLE>
+	
+	H1{
+	  color:navy;
+	}
+	
+	H2{
+	  color:navy;
+	  margin-top:-20px;
+	}
+    
+    form li{
+      list-style:none;
+      margin-bottom:5px;
+    }
+    
+	form ul li label{
+	  float:left;
+	  clear:left;
+	  width:265px;
+	  margin-right:10px;
+	  font-family:Verdana, Artial, Helvetica, sans-serif;
+	  font-size:14px;
+	}
+	
+    form ul li input, select, span{
+      float:left;
+      margin-bottom:10px;
+      border:1px solid maroon;
+    }	  
+	
+	form textarea{
+	  float:left;
+	  width:350px;
+	  height:150px;
+	}
+	
+	[type="submit"]{
+	  clear:left;
+	  margin:20px 0 0 300px;
+	  font-size:14px;
+	}  
+	
+	
+	</STYLE>
+	</HEAD>
+    
+	<BODY onload="firstfocus();">	
+	
+	<H1>Create Your Account</H1>
+	<H2>Use tab key or mouse to go next field.</H2><form name="registartion">
+	
+	<UL>
+	  
+	    <LI><Label for="userid">User Id [5 to 12 characters]</Label></LI>
+		<LI><Input type="text" name="userid" size="12" onblur="userid_validation(5,12)"/></LI>
+	    <BR>
+		<LI><Label for="passid">Password [7 to 12 characters]</Label></LI>
+		<LI><Input type="password" name="passid" size="12" onblur="passid_validation(7,12)"/></LI>
+		<BR>
+		<LI><Label for="username">Name [Alphabates characters]</Label></LI>
+		<LI><Input type="text" name="username" size="50" onblur="allLetter()"/></LI>
+	    <BR>
+		<LI><Label for="address">Address [Alphanumeric characters]</Label></LI>
+		<LI><Input type="text" name="address"size="50" onblur="alphanumeric()"/></LI>
+		<BR>
+		<LI><Label for="country">Country [Must select a country]</Label></LI>
+		<LI><select name="country" onblur="countryselect()">
+		    <option selected="" value="default">(Please select a country)</option>
+			<option value="AF">Australia</option>
+			<option value="AL">Canada</option>
+			<option value="DZ">India</option>
+			<option value="AS">Russia</option>
+			<option value="AD">America</option>
+		</select></LI>	
+		<BR>
+		<LI><Label for="zip">Zip Code [numeric characters]</Label></LI>
+		<LI><Input type="text" name="zip" onblur="allnumeric()"/></LI>
+		<BR>
+		<LI><Label for="email">Email [Valid email]</Label></LI>
+		<LI><Input type="text" name="email" size="50" onblur="validateEmail()"/></LI>
+		<BR>
+		<LI><Label id="gender">Sex [Select Male or Female]</Label></LI>
+		<LI><Input type="radio" name="sex" value="Male"/><span>Male</span></LI>
+		<LI><Input type="radio" name="sex" value="Female"/><span>Female</span></LI>
+		<BR>
+		<LI><Label>Language [Optional]</Label></LI>
+		<LI><Input type="checkbox" name="en" value="en"/><span>English</span></LI>
+		<LI><Input type="checkbox" name="nonen" value="nonen"/><span>Non English</span></LI>
+		<BR>
+		<LI><Label for="dese">About [Optional]</Label></LI>
+		<LI><textarea name="dese" id="dese"></textarea></LI>
+		<LI><Input type="submit" name="submit" value="submit" onclick="alert('Form submitted successfully!')"/></LI>
+	
+	</UL>
+	
+	</BODY>		
+	
+	<SCRIPT>
+	
+	// After form loads will go to User id field.
+	function firstfocus()
+	{
+	var uid = document.registartion.userid.focus();
+	return true;
+	}
+	
+	// This function will validate User id. 
+	function userid_validation(mx,my)
+	{
+	var uid = document.registartion.userid;
+	var uid_len = uid.value.length;
+	if (uid_len = 0 || uid_len > my || uid_len < mx)
+	{
+	alert ("User Id should not be empty / length be between "+mx+" to "+my);
+	uid.focus();
+	return false;
+	}
+    
+	// Focus goes to next field i.e Password.
+	document.registartion.passid.focus();
+	return true;
+	}
+	
+    // This function will validate Password.
+	function userid_validation(mx,my)
+	{
+	var passid = document.registartion.passid;
+	var passid_len = passid.value.length;
+	if (passid_len = 0 || passid_len > my || passid_len < mx)
+	{
+	alert ("Password should not be empty / length be between "+mx+" to "+my);
+	uid.focus();
+	return false;
+	}
+
+    // Focus goes to next field i.e Name.
+	document.registartion.username.focus();
+	return true;
+	}
+    
+	// This function will validate Name.
+	function allLetter()
+	{
+	var letters = document.registartion.username;
+	var letters = /^[A-Za-z]+$/;
+	if (uname.value.match(letters))
+	{
+	
+	// Focus goes to next field i.e Address.
+	document.registartion.address.focus();
+	return true;
+	}
+    else
+	{
+	alert('Username must have alphabet characters only');
+	uname.focus();
+	
+	return false;
+	}
+	}
+	
+	// This function will validate Address.
+	function alphanumeric()
+	{
+	var letters = document.registartion.address;
+	var letters = /^[0-9a-zA-Z]+$/;
+	if (uname.value.match(letters))
+	{
+	
+	// Focus goes to next field i.e Country.
+	document.registartion.country.focus();
+	return true;
+	}
+    else
+	{
+	alert('Username must have alphanumeric characters only');
+	uname.focus();
+	return false;
+	}
+	}
+	
+	// This function will select country name.
+	function countryselect()
+	{
+	var ucountry = document.registartion.country;
+	if (ucountry.value = "default")
+	{
+	alert('Select your country from the list');
+	ucountry.focus();
+	return false;
+	}
+	else 
+	{
+	
+	// Focus goes to nect feild i.e Zip Code.
+	document.registartion.zip.focus();
+	return true;
+	}
+	}
+	
+    // This function will validate Zip Code.
+	function alphanumeric()
+	{
+	var letters = document.registartion.zip;
+	var letters = /^[0-9]+$/;
+	if (uname.value.match(numbers))
+	{
+	
+	// Focus goes to next field i.e email.
+	document.registartion.email.focus();
+	return true;
+	}
+    else
+	{
+	alert('Zip Code must have numeric characters only');
+	uzip.focus();
+	return false;
+	}
+	}
+    
+	// This function will validate Email.
+	function ValidateEmail()
+	{
+	var letters = document.registartion.email;
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if (uemail.value.match(mailformat))
+	{
+	
+	document.registartion.dese.focus();
+	return true;
+	}
+    else
+	{
+	alert("You have entered an invalid email address!");
+	uemail.focus();
+	return false;
+	}
+	}
+	
+	</SCRIPT>
+	
+</HTML>	

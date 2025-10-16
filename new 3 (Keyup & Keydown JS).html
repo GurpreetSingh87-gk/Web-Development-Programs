@@ -1,0 +1,47 @@
+<HTML>
+    <HEAD>
+	<TITLE>WEB PAGE</TITLE>
+	<SCRIPT>
+	
+	let a=0;
+	let b=0;
+	let c=0;
+	
+	function changeBackground(){
+	let x=document.getElementById('bg');
+	x.style.backgroundColor='rgb('+a+,'+b+','+c+')';
+	a+=100;
+	b+=a+50;
+	c+=b+70;
+	
+	if(a>255) a=a-b;
+	if(b>255) b=a;
+	if(c>255) c=b;
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</SCRIPT>
+	</HEAD>
+	<BODY>
+	
+	
+	<H2>Keyup and Keydown</H2>
+	
+	<H3>The input box will change color when UP arrow key is pressed.</H3>
+	
+	<Input id="bg" onkeyup="changeBackground()" placeholder="Write Something" style="color:#FF0000">
+	
+		
+	</BODY>
+</HTML>	
