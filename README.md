@@ -11,12 +11,10 @@ These programs are design to help me understand the basics of Front-end developm
 
 Each folder or file in this repository focuses on different web concepts such as:
 
-🧱 HTML Structure and Tags
-🎨 CSS Styling and Layouts
-⚡ JavaScript Interactivity
-🌐 Basic Web Projects (like forms, calculators, or landing pages)
-
-
+- 🧱 HTML Structure and Tags
+- 🎨 CSS Styling and Layouts
+- ⚡ JavaScript Interactivity
+- 🌐 Basic Web Projects (like forms, calculators, or landing pages)
 
 ---
 
