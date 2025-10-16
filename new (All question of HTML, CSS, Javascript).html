@@ -1,0 +1,941 @@
+<HTML>
+    <HEAD>
+	    <TITLE>WEB PAGE</TITLE>
+
+
+<!----HTML Questions
+--------->	
+	
+<!--Q-1. Write html code to generate following output.
+	
+	1. Coffee
+	2. Tea
+            Black Tea
+			Green Tea
+	3. Milk		
+
+----A-1.-->
+<!---
+    <OL type="1">
+	
+	<LI>Coffee</LI>
+	<LI>Tea</LI>
+	
+	        <UL type="circle">
+	        
+			<LI>Black Tea</LI>
+			<LI>Green Tea</LI>
+	        
+			</UL>
+    
+	<LI>Milk</LI>	
+	  
+    </OL>
+-------------------------------------------------------------------->
+<!--Q-2. Create an html page containing the polynomial expression as follows:
+
+    a0+a1x+a2x2+a3x3
+
+----A-2.--> 
+<!---    
+
+	<H1>
+	
+	a<sub>0</sub> + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup> + a<sub>3</sub>x<sup>3</sup>
+	
+	</H1>
+	<!---- Sub = Down
+	      Sup = Up 
+	
+-------------------------------------------------------------------->	
+<!--Q-3. Write a HTML script to insert a hyperlink in which when clicked links to "www.google.co.in" in a new window.		
+----A-3.--> 	
+<!--	
+	<a href="http://www.google.co.in" target="_blank">
+	www.Google.co.in
+
+-------------------------------------------------------------------->	
+<!--Q-4. Write HTML code to create following table.
+----A-4.--> 	
+<!--	
+	
+    <TABLE BORDER="1" CELLPADDING="15" ALIGN="center">
+	
+	<TR>  
+		<TH rowspan="2">Train Number</TH>  
+	    <TH rowspan="2">Train Name</TH>
+		<TH colspan="2">Timing</TH>
+	</TR>	
+	
+	<TR>
+		<TH>Arrival</TH>
+		<TH>Departure</TH>
+    </TR>
+	
+	<TR>
+	    <TD>15004</TD>
+        <TD>Chauri Chaura Express</TD>
+	    <TD>5:30 AM</TD>
+	    <TD>5:45 AM</TD>
+	</TR>
+	
+    <TR>
+	   <TD>15159</TD>
+	   <TD>Sarnath Express</TD>
+       <TD>6:50 AM</TD>
+       <TD>7:15 AM</TD>
+	</TR>	
+	    
+	<TR>	
+		<TD>19877</TD>
+	    <TD>Chennai Express</TD>
+	    <TD>6:50 AM</TD>
+        <TD>8:30 AM</TD>
+	</TR>
+	
+	</TABLE>
+-------------------------------------------------------------------->    
+<!--Q-5. Write a HTML code for creating a table with 9 columns and "n" rows here n is the no of students
+         and columns contain students attribute such as (Srno,student,roll,DOB,address,father name,
+		 mother name,class,course he/she is enrolled)
+----A-5.--> 
+<!--
+	
+	<TABLE BORDER="1" CELLPADDING="10" ALIGN="center">
+	
+	<TR>
+	    <TH>Sr.No.</TH>
+		<TH>Student</TH>
+		<TH>Roll No.</TH>
+		<TH>DOB</TH>
+		<TH>Address</TH>
+		<TH>Father's Name</TH>
+		<TH>Mother's Name</TH>
+		<TH>Class</TH>
+		<TH>Course</TH>
+	</TR>
+	
+	
+	<TR>
+	    <TD>1.</TD>
+		<TD>Arjan Singh</TD>
+		<TD>22/22672</TD>
+		<TD>20/02/2002</TD>
+	    <TD>H No.424 Sector 124 Chandigarh</TD>
+		<TD>Dajan Singh</TD>
+		<TD>Ravjeet Kaur</TD>
+		<TD>12th</TD>
+		<TD>Science</TD>
+	</TR>
+-------------------------------------------------------------------->	
+<!--Q-6. Create table with Rowspan and Colspan attribute of table in HTML (Prepare timetable of your
+         class). Include Cellspacing and Cellpadding.
+----A-6.--> 
+<!--
+	
+	
+	<TABLE BORDER="1" CELLPADDING="15" CELLSPACING="10" ALIGN="center">
+	
+	<TR>
+	    <TH>Period</TH>
+		<TH>I<BR>8:30-9:30 AM</TH>
+	    <TH>II<BR>9:30-10:30 AM</TH>
+	    <TH>III<BR>10:30-11:30 AM</TH>
+	    <TH rowspan="7">R<BR>E<BR>C<BR>E<BR>S<BR>S</TH>
+	    <TH>IV<BR>12:30-1:30 PM</TH>
+        <TH>V<BR>1:30-2:30 PM</TH>
+		<TH>VI<BR>2:30-3:00 PM</TH>
+    </TR>
+	
+	 
+	<TR>
+        <TD>Monday</TD>	
+	    <TD align="center">Science</TD>
+		<TD align="center">English</TD>
+		<TD align="center">Maths</TD>
+	    <TD align="center">Hindi</TD>
+	    <TD align="center">Punjabi/Sanskrit</TD>
+	    <TD align="center">Computer</TD>
+	</TR>
+	
+	<TR>
+        <TD>Tuesday</TD>	
+	    <TD align="center" colspan="2">Computer</TD>
+		<TD align="center">Punjabi/Sanskrit</TD>
+	    <TD align="center">Hindi</TD>
+	    <TD align="center">English</TD>
+	    <TD align="center">Science</TD>
+	</TR>
+	
+	<TR>
+        <TD>Wednesday</TD>	
+	    <TD align="center">Hindi</TD>
+		<TD align="center">Games</TD>
+		<TD align="center">Maths</TD>
+	    <TD align="center">Science</TD>
+	    <TD align="center">Punjabi/Sanskrit</TD>
+	    <TD align="center">Computer</TD>
+	</TR>
+	
+	<TR>
+        <TD>Thursday</TD>	
+	    <TD align="center">Maths</TD>
+		<TD align="center">English</TD>
+		<TD align="center">Science</TD>
+	    <TD align="center" colspan="2">Games</TD>
+	    <TD align="center">Punjabi/Sanskrit</TD>
+	</TR>
+	
+	<TR>
+        <TD>Friday</TD>	
+	    <TD align="center">Punjabi/Sanskrit</TD>
+		<TD align="center">English</TD>
+		<TD align="center">Maths</TD>
+	    <TD align="center">Hindi</TD>
+	    <TD align="center" COLSPAN="2">Computer</TD>
+	</TR>
+	
+	<TR>
+        <TD>Saturday</TD>	
+	    <TD align="center">Science</TD>
+		<TD align="center" colspan="2">English</TD>
+		<TD align="center">Maths</TD>
+	    <TD align="center">Hindi</TD>
+	    <TD align="center">Punjabi/Sanskrit</TD>
+	</TR>
+	
+	</TABLE>
+-------------------------------------------------------------------->
+<!--Q-7. Create an html page with red backgound with a message "warning" in large size. 
+        Add scrolling text "read the message" below it>	
+----A-7.--> 	
+<!--
+	<BODY bgcolor="red">
+	
+	<center>
+	<font color="black" size="7">Warning</font>
+	</center>
+	
+	<marquee>Read the message</marquee>
+	
+-------------------------------------------------------------------->
+<!--Q-8. Write a HTML program to design a form which should allow to enter your personal data
+        (Hint:make use of text field, password field, e-mail,lists,radio,button,checkbox,submit button.  
+----A-8.-->
+<!--
+	
+	
+	<TABLE BORDER="1" CELLPADDING="15" CELLSPACING="5" ALIGN="center">
+	
+	<TR>
+	    <TH colspan="5">Admission Form 2025</TH>
+	</TR>	
+	
+	<TR>
+	    <TD>First Name</TD>
+		<TD><INPUT TYPE="FN" PLACEHOLDER="Enter First Name"></TD> 
+	</TR>
+	
+	<TR>
+	    <TD>Last Name</TD>
+		<TD><INPUT TYPE="LN" PLACEHOLDER="Enter Last Name"></TD> 
+	</TR>
+	
+	<TR>
+	    <TD>Father's Name</TD>
+		<TD><INPUT TYPE="FN" PLACEHOLDER="Enter Father's Name"></TD> 
+	</TR>
+	
+	<TR>
+	    <TD>Gender</TD>
+		<TD><INPUT TYPE="radio" NAME="Gender">Male<INPUT TYPE="radio" NAME="Gender">Female<INPUT TYPE="radio" NAME="Gender">Others</TD> 
+	</TR>
+	
+	<TR>
+	    <TD>Course</TD>
+		<TD><SELECT>
+	        <OPTGROUP LABEL="Select Course">
+	        <OPTION>BCA</OPTION>
+	        <OPTION>B.COM</OPTION>
+	        <OPTION>BA</OPTION>
+	        <OPTION>BA.PG</OPTION>
+	        </OPTGROUP>
+	    </TD></SELECT>
+	
+	<TR>
+	    <TD>Qualifications</TD>
+		<TD><INPUT TYPE="checkbox" NAME="QLY">10<SUP>th</SUP> 
+	        <INPUT TYPE="checkbox" NAME="QLY">12<SUP>th</SUP> 
+	        <INPUT TYPE="checkbox" NAME="QLY">ITI
+	        <INPUT TYPE="checkbox" NAME="QLY">Diploma
+	    </TD>
+	</TR>
+	
+	
+	<TR>
+	    <TD>Email</TD>
+		<TD><INPUT TYPE="EM" PLACEHOLDER="e.g. abc@gmail.com"></TD> 
+	</TR>
+	
+	<TR>
+	    <TD>Password</TD>
+		<TD><INPUT TYPE="password" PLACEHOLDER="Enter Password"></TD> 
+	</TR>
+	
+	
+	<TR>
+	    <TD colspan="2" align="center">
+		<INPUT TYPE="Submit">  <INPUT TYPE="Reset"></TD>
+	</TR>
+
+	</TABLE>
+-------------------------------------------------------------------->
+<!--Q-9. Write a HTML code to generate country and its population (in crores)over the years the following.
+----A-9.-->	
+<!--
+	<BODY>
+	
+	<TABLE BORDER="1" CELLPADDING="15" CELLSPACING="3" ALIGN="center">
+	
+	<TR>
+       	<TH>Rank</TH>   
+	    <TH>Country</TH>
+		<TH>Years</TH>
+		<TH>Population (in crores)</TH>
+	</TR>
+	
+	<TR>
+	    <TD rowspan="3" align="center">1.</TD>
+	    <TD rowspan="3" align="center">India</TD>
+	    <TD align="center">1998</TD>
+		<TD align="center">85</TD>
+	</TR>
+	
+	<TR>
+	    <TD align="center">1999</TD>
+		<TD align="center">90</TD>	
+	</TR>
+	
+	<TR>
+	    <TD align="center">2000</TD>
+		<TD align="center">100</TD>	
+	</TR>
+	
+	<TR>
+	    <TD rowspan="3" align="center">2.</TD>
+	    <TD rowspan="3" align="center">China</TD>
+	    <TD align="center">1998</TD>
+	    <TD align="center">30</TD>
+	</TR>
+	
+	<TR>
+	    <TD align="center">1999</TD>
+		<TD align="center">35</TD>	
+	</TR>
+	
+	<TR>
+	    <TD align="center">2000</TD>
+		<TD align="center">40</TD>	
+	</TR>
+	
+	<TR>
+	    <TD rowspan="3" align="center">3.</TD>
+	    <TD rowspan="3" align="center">USA</TD>
+	    <TD align="center">1998</TD>
+	    <TD align="center">25</TD>
+	</TR>
+	
+	<TR>
+	    <TD align="center">1999</TD>
+		<TD align="center">30</TD>	
+	</TR>
+	
+	<TR>
+	    <TD align="center">2000</TD>
+		<TD align="center">35</TD>	
+	</TR>
+
+	</TABLE>
+-------------------------------------------------------------------->
+<!--Q-10.  Create a web page, divide the web page into four frames. In one frame create three links.  
+----A-10.-->  
+<!--   
+ 
+   
+	
+	<frameset rows="30%,40%,30%">
+   
+    <frame name="top" src="C:\Users\HARMEET KAUR\OneDrive\Documents\CSS Projects\Frame1.html">	
+	    
+	<frameset cols="50%,50%">
+    
+	<FRAME name="left" src="C:\Users\HARMEET KAUR\OneDrive\Documents\CSS Projects\Frame2.html">	
+    
+	<frame name="right" src="C:\Users\HARMEET KAUR\OneDrive\Documents\CSS Projects\Frame3.html">	
+	
+	</frameset>
+	
+	<frame name="Bottom" src="C:\Users\HARMEET KAUR\OneDrive\Documents\CSS Projects\Frame4.html">
+   
+    
+    </frameset>
+    
+	    
+	
+-------------------------------------------------------------------->		
+<!--Q-11. Write a HTML code for creating the following output.
+----A-11.-->	    
+<!--      
+   
+    
+	<TABLE BORDER="1" CELLPADDING="25" CELLSPACING="3" ALIGN="center">
+	
+	<TR> 
+	    <TH>Primary Memory</TH>
+	    <TH>Secondary Memory</TH>
+    </TR>
+	
+	<TR>
+	    <TD><UL TYPE="dot">
+		    
+			<LI>RAM (Random Access Memory)</LI>
+            
+                <OL TYPE="a">
+                
+				    <LI>SRAM</LI>
+				    <LI>DRAM</LI>
+				
+				
+				    <UL TYPE="circle">
+					   
+					    <LI>SDRAM</LI>
+					    <LI>RDRAM</LI>
+					    <LI>DDR</LI>
+					    <LI>SDRAM</LI>
+					
+					</UL>
+					
+			    </OL>
+				
+			<LI>ROM</LI>
+
+                <OL TYPE="a">
+				
+				    <LI>PROM</LI>
+				    <LI>EPROM</LI>
+				    <LI>EEPROM</LI>
+				    <LI>MPROM</LI>
+                
+				</OL>
+
+            </UL>
+        </TD>
+        
+		<TD>
+        <UL TYPE="dot">
+		     
+			<LI>Magnetic Disk</LI> 
+			<LI>Floppy Disk</LI>
+			<LI>Hard Disk</LI>
+			<LI>Solid State Drive</LI>
+			<LI>Pen Drives</LI>
+			<LI>Blu Ray Disk</LI>
+			<LI>SD Card</LI>
+			<LI>CD</LI>
+			<LI>DVD</LI>
+		
+		</UL>
+		</TD>
+-------------------------------------------------------------------->		
+<!--Q-12. Write a HTML code to generate following output. 
+----A-12.-->  
+<!--   
+    <frameset rows="20%,40%,40%">
+    
+	<frame name="top" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame01.html">
+	
+    <frameset cols="50%,50%">
+	
+	<frame name="left" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame02.html">
+
+    <frame name="right" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame03.html">
+
+    </frameset>
+	
+	<frameset cols="20%,20%,20%">
+	
+	<frame name="left" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame04.html">
+
+    <frame name="center" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame05.html">
+
+    <frame name="right" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame06.html">
+
+	</frameset>
+
+-------------------------------------------------------------------->		
+<!-------Frameset	
+---->	
+<!-- 
+	
+    <frameset rows="30%,40%,30%">
+
+	
+	<frameset cols="*,*,*">
+    
+	<frame name="left" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame01.html">
+	
+	<frame name="center" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame02.html">
+	
+	<frame name="right" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame03.html">
+	
+	</frameset>
+	
+	<frameset cols="*,*,*">
+	
+	<frame name="left" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame04.html">
+	
+	<frame name="center" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame05.html">
+	
+	<frame name="right" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame06.html">
+	
+	</frameset>
+		
+	<frameset cols="*,*,*">
+	
+	<frame name="left" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame07.html">
+	
+	<frame name="center" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame08.html">
+	
+	<frame name="right" src="C:\Users\HARMEET KAUR\OneDrive\Documents\Gurpreet Web Design Revision\Frame09.html">
+	
+	</frameset>
+	
+-------------------------------------------------------------------->		
+
+<!------CSS Questions
+--------->	
+
+<!--Q-1. With CSS use the shorthand background property to set background image to e.g."xyz.png",
+        show it once, in the top right corner.
+---A-1.-->
+<!--    
+	<STYLE>
+	
+	body{
+	margin:0;
+	}
+	
+	.image{
+	background-image:url("C:\Users\HARMEET KAUR\Downloads\aa.jpg");
+	margin-right:200px;
+	}
+	
+	</STYLE>
+    <BODY>
+	
+	<H1>Background Property</H1>
+	
+	<div class="image">
+	
+	<image src="C:\Users\HARMEET KAUR\Downloads\aa.jpg" height="100%" width="100%">
+	</div>
+----------------------------------------------------------->   
+<!--Q-2. Design Color specific rows in the following table using CSS.   
+---A-1.-->	
+<!--
+	<STYLE>
+	
+	TABLE{
+	border-collapse:collapse;
+	}
+	
+	TR{
+	height:40px;
+	}
+	TR:nth-child(1)
+	{
+	background-color:violet;
+	color:white;
+	}
+	
+	TR:nth-child(2)
+	{
+	background-color:blue;
+	color:white;
+	}
+	
+	TR:nth-child(3)
+	{
+	background-color:green;
+	color:white;
+	}
+	
+	TR:nth-child(4)
+	{
+	background-color:yellow;
+	color:black;
+	}
+	
+	TR:nth-child(5)
+	{
+	background-color:orange;
+	color:white;
+	}
+	
+	</STYLE>
+	<BODY>
+	
+	<TABLE BORDER="1" CELLPADDING="15" ALIGN="center">
+	
+	
+	<TR>
+	    <TD>Violet</TD>  
+	    <TD>I love Violet.</TD>
+	</TR>
+	
+	
+	<TR>
+	    <TD>Blue</TD>  
+	    <TD>Blue is the most loved color.</TD>
+	</TR>
+	
+	<TR>
+	    <TD>Green</TD>  
+	    <TD>Green is the second most favourite color.</TD>
+	</TR>
+	
+	<TR>
+	    <TD>Yellow</TD>  
+	    <TD>Yellow stands for caution and it's used for traffic warning signs.</TD>
+	</TR>
+	
+	<TR>
+	    <TD>Orange</TD>  
+	    <TD>Orange symbolizes youthfullness, positivity, warmth and freedom.</TD>
+	</TR>
+-------------------------------------------------------------->	
+<!--Q-3. HTML code using CSS to create job application
+---A-3.-->	
+<!--	
+	<STYLE>
+	body{
+	font-family:Calibri;
+	background-color:#f4f4f4;
+	margin:0;
+	padding:0;
+	justify-content:center;
+	align-items:center;
+	}
+	
+	.form-container{
+	background-color:#fff;
+	padding:40px;
+	border-radius:5px;
+	box-shadow:0 0 rgda(0,0,0,0.1);
+	width:35%;
+	}
+	
+	.H1{
+	margin-bottom:20px;
+	}
+	
+	.a1{
+	margin-bottom:15px;
+	}
+	
+	.a1 label{
+	font-size:18px;
+	}
+	
+	.a1 label,input{
+	display:block;
+	margin-top:10px;
+	padding:10px;
+	}
+	
+	.b1{
+	margin-bottom:15px;
+	}
+	
+	
+	.b1 label{
+	font-size:18px;
+	}
+	
+	
+	.c1{
+	margin-bottom:15px;
+	}
+	
+	.c1 label{
+	font-size:18px;
+	}
+	
+	
+	.d1{
+	margin-bottom:19px;
+	}
+	
+	.d1 label{
+	font-size:18px;
+	display:block;
+	}
+	
+	.d1 input{
+	display:inline-block;
+	}
+	
+	.e1{
+	margin-bottom:15px;
+	}
+	
+	.e1 label{
+	font-size:18px;
+	}
+	
+	.f1{
+	margin-bottom:15px;
+	}
+	
+	.f1 label{
+	font-size:18px;
+	display:block;
+	margin-bottom:10px;
+	}
+	
+	.g1{
+	margin-bottom:15px;
+	}
+	
+	.g1 label{
+	font-size:18px;
+	}
+	
+	
+	.h1{
+	margin-bottom:15px;
+	}
+
+    .h1 label{
+	font-size:18px;
+	}
+	
+    .i1{
+	margin-bottom:15px;
+	}
+	
+	
+	.i1 label{
+	font-size:18px;
+	}
+	
+	.j1{
+	margin-bottom:15px;
+	}
+	
+	.j1 label{
+	font-size:18px;
+	}
+	
+	.Submit-button button{
+	background-color:#99CC33;
+	padding:10px 20px;
+	border-radius:5px;
+	border:none;
+	color:white;
+	}
+	
+	.Submit-button button:hover{
+	background-color: #999999;
+	}
+	
+	</STYLE>
+	<BODY>
+	<center>
+	<div class="form-container">
+	  
+	    <H1>Job Application</H1>
+		
+	<form>
+	  
+	    <div class="a1">
+		<label>First Name</label>
+	    <input type="text" placeholder="Enter First Name">
+		</div>
+	    
+		<div class="b1">
+		<label>Last Name</label>
+	    <input type="text" placeholder="Enter Last Name">
+		</div>
+	
+	     <div class="c1">
+		<label>Father's Name</label>
+	    <input type="text" placeholder="Enter Father's Name">
+		</div>
+	
+	    <div class="d1">
+		<label>Gender</label>
+	    <input type="radio" name="Gender">Male
+		<input type="radio" name="Gender">Female
+		<input type="radio" name="Gender">Others
+		</div>
+	    
+	    <div class="e1">
+		<label>Phone Number</label>
+	    <input type="tel" placeholder="Enter Phone Number">
+		</div>
+	    
+	    <div class="f1">
+		<label>Address</label>
+	    <textarea type="Address" name="Address"></textarea>
+		</div>
+	    
+	    <div class="g1">
+		<label>10th Grade</label>
+	    <input type="text" name="10th Grade">
+		</div>
+	   
+		<div class="h1">
+		<label>12th Grade</label>
+	    <input type="text" name="12th Grade">
+		</div>
+	   
+		<div class="i1">
+		<label>Graduation</label>
+	    <input type="text" name="Graduation">
+		</div>
+	   
+		<div class="j1">
+		<label>Experience (in months)</label>
+	    <input type="text" name="Experience">
+		</div>
+	   
+	   <div class="Submit-button">
+	   <button type="Submit">Submit</button>
+	   
+	</div>   
+	</form>   
+	</center>
+----------------------------------------------------------->   
+<!------JS Questions
+-------->	
+<!--Q-1. Using JavaScript create an html page for accepting the values of two numeric variables say
+        N1 and N2 to display the result of following arithmetic calculator.
+----A-1.--->
+<!--
+	<SCRIPT>
+    
+	var N1,N2,res,temp;
+	function fur.()
+	{
+    N1=parselnt(document.getElementById("one").value);
+	N2=parselnt(documen.getElementById("two").value);
+	
+	if (N1&&N2)
+	
+	{
+	temp=document.getElementById("res");
+	temp.style.display="block";
+	
+	res=N1+N2;
+	document.getElementById("add").value=res;
+    
+	res=N1-N2;
+	document.getElementById("subtract").value=res;
+    
+	res=N1*N2;
+	document.getElementById("multiple").value=res;
+    
+	res=N1/N2;
+	document.getElementById("divide").value=res;
+    }
+	}
+
+	</SCRIPT> 
+	</HEAD>
+	<BODY>	 
+	
+	<p id="input">Enter First Number (N1): <input id="one">
+	<br/><br/>
+	
+	Enter Second Number (N2): <input id="two"></p>
+	
+	<p><button onlick="fun()">Add,Subtract,Multiple,Divide</button></p>
+	
+	<p id="res" style="display:none;">
+	 
+	<h1>Aritmetic Calculator</h1>
+	
+	
+	<table Cellspacing="20">
+	
+	<tr>
+	    <td>1.</td>
+	    <td>N1+N2  <input id="add"></td>
+	    
+		<td>3.</td>
+	    <td>N1+N2  <input id="subtract"></td>
+	</tr>
+	
+	<tr>
+	    <td>2.</td>
+	    <td>N1+N2  <input id="multiple"></td>
+	    
+		<td>4.</td>
+	    <td>N1+N2  <input id="divide"></td>
+	
+	</tr>
+	
+	</table>
+----------------------------------------------------------->   
+<!--Q-2. Using HTML, design a form in JavaScript to accept principal, rate and time in text boxes
+        to display compound interest in another text box on clicking calculate button.
+----A-2.--->		
+	<center>
+	<BODY>
+	
+	<table border="2" Cellpadding="15" align="center">
+	
+	<tr>
+	    <td>Principal Amount<input type="text" id="first" placeholder="Enter principal"></td>
+		
+	</tr>
+	
+	<tr>
+	    <td>Time<input type="text" id="second" placeholder="Enter principal"></td>
+		
+	</tr>
+	
+	<tr>
+	    <td>Rate<input type="text" id="third" placeholder="Enter principal"></td>
+		
+	</tr>
+	
+	<tr>
+		<td colspan="2" align="center"><button onlick="Compound_interest">Calculate</button></td>
+	</tr>
+	
+	</table>
+	<br>
+	<div id="num">Compound Interest is:  <input type="text" id="num1"></div>
+	
+	</center>
+	
+	</BODY>
+    <SCRIPT type="text/javascript">
+	
+	function Compund_interest()
+	{
+	var p,t,r,ci;
+	
+	p=document.getElementById("first").value;
+	t=document.getElementById("second").value;
+	r=document.getElementById("third").value;
+    
+	amount=p*Math.pow(1+r/100),t);
+	ci=amount-p;
+	document.getElementById("num1").value=ci;
+	}
+
+    </SCRIPT>
+</HTML>	
